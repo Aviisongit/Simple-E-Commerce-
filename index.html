@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Shoe Store</h1>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Shoes</a>
+                    <div class="dropdown-content">
+                        <a href="#jordan">Jordans</a>
+                        <a href="#nike">Nike Running Shoes</a>
+                        <a href="#lebron">LeBron Shoes</a>
+                        <a href="#curry">Curry Shoes</a>
+                        <a href="#airforce">Nike Air Force 1</a>
+                        <a href="#adidas">Adidas Running Shoes</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Filter Products</h2>
+        <select id="product-filter">
+            <option value="all">All</option>
+            <option value="style">Style (Air Force & Jordans)</option>
+            <option value="basketball">Basketball (Curry & LeBron)</option>
+            <option value="running">Running (Nike & Adidas Running Shoes)</option>
+        </select>
+
+        <section id="jordan" class="product" data-category="style">
+            <h2>Jordans</h2>
+            <img src="images/jordan.jpg" alt="Jordans">
+            <p>Price: $200</p>
+            <p>The Air Jordans are a symbol of excellence in basketball footwear, combining premium materials with a stylish design that pays homage to the legendary Michael Jordan.</p>
+            <button class="add-to-cart" data-name="Jordans" data-price="200">Add to Cart</button>
+        </section>
+
+        <section id="nike" class="product" data-category="running">
+            <h2>Nike Running Shoes</h2>
+            <img src="images/nike.jpg" alt="Nike Running Shoes">
+            <p>Price: $150</p>
+            <p>Engineered for speed and comfort, Nike Running Shoes provide the perfect blend of cushioning and support, helping you go the distance with ease.</p>
+            <button class="add-to-cart" data-name="Nike Running Shoes" data-price="150">Add to Cart</button>
+        </section>
+
+        <section id="lebron" class="product" data-category="basketball">
+            <h2>LeBron Shoes</h2>
+            <img src="images/lebron.jpg" alt="LeBron Shoes">
+            <p>Price: $180</p>
+            <p>Inspired by the dominance and versatility of LeBron James, these shoes offer unmatched performance on the court, designed to handle the toughest of games.</p>
+            <button class="add-to-cart" data-name="LeBron Shoes" data-price="180">Add to Cart</button>
+        </section>
+
+        <section id="curry" class="product" data-category="basketball">
+            <h2>Curry Shoes</h2>
+            <img src="images/curry.jpg" alt="Curry Shoes">
+            <p>Price: $160</p>
+            <p>Stephen Curry's signature shoes are crafted for precision and agility, featuring lightweight construction and exceptional grip for quick moves on the court.</p>
+            <button class="add-to-cart" data-name="Curry Shoes" data-price="160">Add to Cart</button>
+        </section>
+
+        <section id="airforce" class="product" data-category="style">
+            <h2>Nike Air Force 1</h2>
+            <img src="images/airforce.jpg" alt="Nike Air Force 1">
+            <p>Price: $130</p>
+            <p>Elevate your style with the iconic Nike Air Force 1. Known for its classic design and premium comfort, this shoe is a must-have for sneaker enthusiasts.</p>
+            <button class="add-to-cart" data-name="Nike Air Force 1" data-price="130">Add to Cart</button>
+        </section>
+
+        <section id="adidas" class="product" data-category="running">
+            <h2>Adidas Running Shoes</h2>
+            <img src="images/Adidas.jpg" alt="Adidas Running Shoes">
+            <p>Price: $140</p>
+            <p>Adidas Running Shoes are designed for high performance with a sleek look, providing comfort and stability for both casual joggers and serious runners.</p>
+            <button class="add-to-cart" data-name="Adidas Running Shoes" data-price="140">Add to Cart</button>
+        </section>
+
+        <div id="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0</span></p>
+        </div>
+
+        <div id="payment">
+            <h2>Payment Information</h2>
+            <form id="payment-form">
+                <label for="name">Name on Card</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" required>
+
+                <label for="expiry">Expiry Date</label>
+                <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+
+                <label for="cvc">CVC</label>
+                <input type="text" id="cvc" name="cvc" required>
+
+                <button type="submit">Pay Now</button>
+            </form>
+            <p id="payment-status"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Shoe Store</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
