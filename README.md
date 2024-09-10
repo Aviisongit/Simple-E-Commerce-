@@ -7,3 +7,6 @@ simulates what the users would see if they went to purchase.
 To make this website active, I am currently setting up a host for the website and including PayPal and other payment forms to make the payment functional and for payments to go through. 
 To make this website profitable I need to scale up this website which is what I am currently doing, firstly I am focusing on putting more variety of shoes and then I will expand on footwear, along with that I plan on 
 putting Google sense ads and other types of ads that would play when a user interacts with the website. 
+
+
+This is the link you can run: http://127.0.0.1:5500/firstWebsite/index.html
